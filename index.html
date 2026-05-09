@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Fekra Factory</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#5e9bd9"
+      }
+    }
+  }
+};
+</script>
+
+<style>
+body {
+  margin:0;
+  background:
+    radial-gradient(circle at top, rgba(94,155,217,0.20), transparent 60%),
+    radial-gradient(circle at bottom, rgba(94,155,217,0.10), transparent 60%),
+    #050814;
+}
+
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+iframe {
+  width:100%;
+  height:100%;
+  border:0;
+}
+</style>
+</head>
+
+<body class="text-white">
+
+<!-- TOP BAR -->
+<div class="fixed top-4 left-1/2 -translate-x-1/2 glass px-5 py-3 rounded-2xl flex items-center gap-6 z-50">
+
+  <!-- LOGO -->
+  <div class="flex items-center gap-2">
+    <img src="logo.png" class="w-8 h-8 rounded-md"/>
+    <span class="font-semibold">Fekra Factory</span>
+  </div>
+
+  <!-- LANGUAGE -->
+  <div class="flex gap-2">
+
+    <button onclick="setLang('en')" class="flex items-center gap-2 px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition">
+      🇬🇧 EN
+    </button>
+
+    <button onclick="setLang('ar')" class="flex items-center gap-2 px-3 py-1 rounded-lg bg-white/10 hover:bg-white/20 transition">
+      🇦🇪 AR
+    </button>
+
+  </div>
+
+  <!-- WHATSAPP ONLY -->
+  <a href="https://wa.me/971542795082"
+     class="flex items-center gap-2 px-4 py-1 rounded-lg bg-green-500/20 hover:bg-green-500/30 transition">
+    💬 WhatsApp
+  </a>
+
+</div>
+
+<!-- MAIN -->
+<div class="pt-24 px-6 max-w-6xl mx-auto">
+
+  <!-- UNITY WINDOW -->
+  <div class="glass rounded-[28px] overflow-hidden h-[70vh]">
+    <iframe
+      src="https://play-prod.struckd.com/api/v1/games/game/5218d2d9-adbf-4b03-9f3b-b413ac9d1594/build/latest/frame"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="mt-10 space-y-10">
+
+    <!-- HERO -->
+    <section class="text-center">
+      <h1 class="text-3xl font-bold text-primary" data-i18n="title">
+        Launch Your Coffee Business in 30 Days
+      </h1>
+
+      <p class="text-gray-300 mt-3 max-w-3xl mx-auto" data-i18n="subtitle">
+        We provide a fully equipped coffee kiosk for malls, hotels, airports, and high-traffic locations for $25,000.
+      </p>
+    </section>
+
+    <!-- STATS -->
+    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+
+      <div class="glass p-4 rounded-xl">
+        <p class="text-2xl font-bold">30</p>
+        <p class="text-sm text-gray-300" data-i18n="days">Days to Launch</p>
+      </div>
+
+      <div class="glass p-4 rounded-xl">
+        <p class="text-2xl font-bold">$25K</p>
+        <p class="text-sm text-gray-300" data-i18n="cost">Full Package Cost</p>
+      </div>
+
+      <div class="glass p-4 rounded-xl">
+        <p class="text-2xl font-bold">60</p>
+        <p class="text-sm text-gray-300" data-i18n="support">Days Support</p>
+      </div>
+
+      <div class="glass p-4 rounded-xl">
+        <p class="text-2xl font-bold">43B$</p>
+        <p class="text-sm text-gray-300" data-i18n="market">Global Market</p>
+      </div>
+
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="glass p-6 rounded-2xl">
+      <h2 class="text-xl font-bold mb-4" data-i18n="why">Why Choose Fekra Factory</h2>
+
+      <div class="grid md:grid-cols-2 gap-3 text-sm text-gray-300">
+
+        <p>☕ <span data-i18n="a1">No experience needed — full training included</span></p>
+        <p>💰 <span data-i18n="a2">Much cheaper than starting alone ($150K+)</span></p>
+        <p>🚀 <span data-i18n="a3">Launch in just 30 days</span></p>
+        <p>📈 <span data-i18n="a4">High profit business model</span></p>
+        <p>🌍 <span data-i18n="a5">Tap into a $43B global market</span></p>
+        <p>🏆 <span data-i18n="a6">Premium kiosk branding</span></p>
+
+      </div>
+    </section>
+
+    <!-- PACKAGE -->
+    <section class="glass p-6 rounded-2xl">
+      <h2 class="text-xl font-bold mb-4" data-i18n="package">What You Get</h2>
+
+      <div class="space-y-2 text-sm text-gray-300">
+        <p>• Equipment & Coffee Machines</p>
+        <p>• Branding & Packaging System</p>
+        <p>• Custom Website</p>
+        <p>• Full Training Program</p>
+        <p>• Legal & Sales Training</p>
+        <p>• Supplier & Cost Tools</p>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="glass p-6 rounded-2xl">
+      <h2 class="text-xl font-bold mb-4" data-i18n="process">How It Works</h2>
+
+      <div class="space-y-2 text-sm text-gray-300">
+        <p>1. Pay $500 initial fee</p>
+        <p>2. Sign contract</p>
+        <p>3. Pay remaining balance</p>
+        <p>4. Receive kiosk in 30 days</p>
+        <p>5. 60 days support</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+const translations = {
+  en: {
+    title: "Launch Your Coffee Business in 30 Days",
+    subtitle: "We provide a fully equipped coffee kiosk for malls, hotels, airports, and high-traffic locations for $25,000.",
+    days: "Days to Launch",
+    cost: "Full Package Cost",
+    support: "Days Support",
+    market: "Global Market",
+    why: "Why Choose Fekra Factory",
+    package: "What You Get",
+    process: "How It Works",
+    a1: "No experience needed — full training included",
+    a2: "Much cheaper than starting alone ($150K+)",
+    a3: "Launch in just 30 days",
+    a4: "High profit business model",
+    a5: "Tap into a $43B global market",
+    a6: "Premium kiosk branding"
+  },
+  ar: {
+    title: "ابدأ مشروع القهوة الخاص بك خلال 30 يومًا",
+    subtitle: "نوفر لك كشك قهوة متكامل للمولات والفنادق والمطارات مقابل 25,000 دولار.",
+    days: "يوم للإطلاق",
+    cost: "تكلفة الحزمة",
+    support: "يوم دعم",
+    market: "السوق العالمي",
+    why: "لماذا فكرة فاكتوري",
+    package: "ما تحصل عليه",
+    process: "كيف تعمل العملية",
+    a1: "بدون خبرة — تدريب كامل شامل",
+    a2: "أرخص من البدء وحدك ($150K+)",
+    a3: "إطلاق خلال 30 يوم فقط",
+    a4: "نموذج ربح عالي",
+    a5: "سوق عالمي بقيمة 43 مليار دولار",
+    a6: "هوية تجارية احترافية"
+  }
+};
+
+function setLang(lang){
+  document.documentElement.lang = lang;
+  document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.getAttribute("data-i18n");
+    if(translations[lang][key]){
+      el.innerText = translations[lang][key];
+    }
+  });
+}
+</script>
+
+</body>
+</html>
